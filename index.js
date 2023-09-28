@@ -5,7 +5,9 @@ const express = require("express");
 const app = express();
 const connection = require("./db");
 const cors = require("cors");
-const port = 8080;
+
+// get the available port from environment variable or default to 3000
+const port = process.env.PORT || 3000;
 
 (async function db() {
   await connection();

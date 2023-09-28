@@ -7,21 +7,8 @@
     "test": "npm run test",
     "start": "nodemon start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ezesundayeze/forgotpassword.git"
-  },
-  "keywords": [
-    "password",
-    "forgot",
-    "password"
-  ],
-  "author": "Eze Sunday Eze",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ezesundayeze/forgotpassword/issues"
-  },
-  "homepage": "https://github.com/ezesundayeze/forgotpassword#readme",
+  "author": "Brad Clonan",
+  "license": "For Science",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
