@@ -1,11 +1,20 @@
 # Secure Password Reset 
 
-This is a password reset sample project
+# API Documentation
 
-Workflow
+## Base URL
+All API requests are made to: `http://localhost:3000/api/v1/`.
 
-![Sample](reset-password.png "Workflow")
+### Route 1: `/route1`
 
-Follow the tutorial [here]("") to learn the implementation
+#### Method:
 
+POST
 
+#### Headers
+
+| Key | Value |
+| --- | ---- |
+| Content-Type | application/json |
+
+#### Body Request

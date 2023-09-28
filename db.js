@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-let DB_URL = process.env.DB_URL;
+
+let DB_URL = process.env.DB_URL || "mongodb://localhost:27017/myapp";
 
 module.exports = async function connection() {
   try {
@@ -11,13 +12,10 @@ module.exports = async function connection() {
         useFindAndModify: false,
         useCreateIndex: true,
         autoIndex: true,
-      },
-      (error) => {
-        if (error) return new Error("Failed to connect to database");
-        console.log("connected");
       }
     );
+    console.log("Successfully connected to database");
   } catch (error) {
-    console.log(error);
+    console.error("Failed to connect to database: ", error);
   }
 };
